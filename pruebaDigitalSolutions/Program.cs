@@ -13,9 +13,9 @@ namespace pruebaDigitalSolutions
     {
         static void Main(string[] args)
         {
-            CaptureScreenshots("C:\\Users\\Enzo Gonzalez\\source\\repos\\pruebaDigitalSolutions\\pruebaDigitalSolutions\\bin\\Debug\\VideoTest\\Test.mp4");
+            CaptureScreenshots("C:\\Users\\Enzo Gonzalez\\source\\repos\\pruebaDigitalSolutions\\pruebaDigitalSolutions\\VideoTest\\Test.mp4");
 
-            DetectAndSaveFacialExpressions("C:\\Users\\Enzo Gonzalez\\source\\repos\\pruebaDigitalSolutions\\pruebaDigitalSolutions\\bin\\Debug\\VideoTest\\Test2.mp4");
+            DetectAndSaveFacialExpressions("C:\\Users\\Enzo Gonzalez\\source\\repos\\pruebaDigitalSolutions\\pruebaDigitalSolutions\\VideoTest\\Test2.mp4");
         }
 
         static void CaptureScreenshots(string videoPath)
@@ -62,7 +62,7 @@ namespace pruebaDigitalSolutions
 
             Directory.CreateDirectory("FacialExpressions");
 
-            var faceCascade = new CascadeClassifier("C:\\Users\\Enzo Gonzalez\\source\\repos\\pruebaDigitalSolutions\\pruebaDigitalSolutions\\bin\\Debug\\path\\haarcascade_frontalface_default.xml");
+            var faceCascade = new CascadeClassifier("C:\\Users\\Enzo Gonzalez\\source\\repos\\pruebaDigitalSolutions\\pruebaDigitalSolutions\\path\\haarcascade_frontalface_default.xml");
 
             int frameIndex = 0;
 
